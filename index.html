@@ -3,273 +3,237 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f3e9dc">
-    <meta name="description" content="Meghívó a Császártöltési Német Nemzetiségi Tánccsoport 45. évfordulójának jótékonysági báljára. 2026. november 21., 19 óra, Császártöltés, Teleház.">
-    <title>Meghívó · 45. évforduló · Császártöltési Német Nemzetiségi Tánccsoport</title>
+    <meta name="theme-color" content="#3c4938">
+    <meta name="description" content="Meghívó a Császártöltési Német Nemzetiségi Tánccsoport 45. évfordulójának jótékonysági báljára. 2026. november 21., Császártöltés, Teleház.">
+    <title>Meghívó a 45. évfordulós jótékonysági bálra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
       :root {
         color-scheme: light;
-        --paper: #fffaf2;
-        --ink: #3e3730;
-        --wine: #793d46;
-        --muted: #6b6257;
-        --line: #d9c7ae;
-        /* A 4px base: small gaps join related lines; larger gaps separate groups. */
-        --space-1: 0.25rem;
-        --space-2: 0.5rem;
-        --space-3: 0.75rem;
-        --space-4: 1rem;
-        --space-6: 1.5rem;
-        --space-8: 2rem;
-        --space-12: 3rem;
-        --safe-area: clamp(1.25rem, 6vw, 4rem);
+        --ink: #222a26;
+        --panel: rgb(240 236 200 / 88%);
+        --space-1: 0.5rem;
+        --space-2: 1rem;
+        --space-3: 1.5rem;
+        --space-4: 2rem;
+        --space-5: 2.5rem;
       }
 
       * { box-sizing: border-box; }
 
       body {
+        min-height: 100vh;
         margin: 0;
-        padding: clamp(0.75rem, 3vw, 2.5rem);
-        background: #eee5d9;
+        padding: 0;
         color: var(--ink);
-        font-family: Georgia, "Times New Roman", serif;
-        font-size: 1.125rem;
-        line-height: 1.6;
+        background: #344333;
+        font-family: Lato, system-ui, sans-serif;
+        line-height: 1.4;
       }
 
-      h1, p, dl, dd { margin: 0; }
+      h1, p, address { margin: 0; }
 
       .poster {
         position: relative;
         isolation: isolate;
-        overflow: hidden;
-        max-width: 54rem;
+        display: grid;
+        width: min(100%, 45rem);
+        aspect-ratio: 5 / 7;
         margin-inline: auto;
-        padding: clamp(1rem, 5vw, 3.5rem);
+        padding: 6%;
+        container-type: inline-size;
         background:
-          radial-gradient(ellipse at 0% 5%, #b9be9e 0, transparent 34%),
-          radial-gradient(ellipse at 100% 95%, #c1c7ab 0, transparent 35%),
-          #e8d5c4;
-        box-shadow: 0 1rem 3rem #4c37251a;
+          radial-gradient(ellipse at 9% 3%, rgb(223 230 172 / 76%) 0 1%, transparent 16%),
+          radial-gradient(ellipse at 38% 2%, rgb(168 191 135 / 78%) 0 1%, transparent 19%),
+          radial-gradient(ellipse at 76% 1%, rgb(212 218 159 / 72%) 0 1%, transparent 18%),
+          radial-gradient(ellipse at 98% 14%, rgb(107 139 87 / 76%), transparent 31%),
+          radial-gradient(ellipse at 5% 48%, #9aa778 0, transparent 35%),
+          radial-gradient(ellipse at 93% 68%, #b3a373 0, transparent 31%),
+          radial-gradient(ellipse at 48% 100%, #101c16 0, #253429 30%, transparent 64%),
+          linear-gradient(#70875e 0%, #75835e 29%, #8b795d 64%, #27362b 100%);
       }
 
-      /* CSS-only flowers stay behind the opaque reading panel. */
       .flower {
         position: absolute;
         z-index: -1;
-        width: 19rem;
-        height: 19rem;
+        width: 34cqw;
+        aspect-ratio: 1;
         border-radius: 50%;
+        filter: drop-shadow(0 0.5rem 0.7rem rgb(35 24 20 / 22%));
         background:
-          radial-gradient(ellipse at 50% 50%, #b89262 0 8%, transparent 9%),
-          radial-gradient(ellipse at 50% 27%, #f9ded2 0 20%, transparent 21%),
-          radial-gradient(ellipse at 72% 42%, #e7b5a8 0 22%, transparent 23%),
-          radial-gradient(ellipse at 64% 70%, #f4d0bf 0 22%, transparent 23%),
-          radial-gradient(ellipse at 33% 69%, #e6b3a5 0 22%, transparent 23%),
-          radial-gradient(ellipse at 26% 40%, #f8dbcc 0 22%, transparent 23%);
+          radial-gradient(ellipse at 50% 10%, #efb29a 0 12%, transparent 13%),
+          radial-gradient(ellipse at 75% 19%, #f6c2a5 0 12%, transparent 13%),
+          radial-gradient(ellipse at 91% 48%, #ed9d83 0 12%, transparent 13%),
+          radial-gradient(ellipse at 77% 77%, #f4b69c 0 12%, transparent 13%),
+          radial-gradient(ellipse at 49% 91%, #e9967c 0 12%, transparent 13%),
+          radial-gradient(ellipse at 21% 77%, #f5c0a4 0 12%, transparent 13%),
+          radial-gradient(ellipse at 8% 47%, #e99a81 0 12%, transparent 13%),
+          radial-gradient(ellipse at 24% 19%, #f2b49a 0 12%, transparent 13%),
+          radial-gradient(circle at 50% 50%, #5f482d 0 8%, #b98b4d 9% 12%, transparent 13%);
       }
 
-      .flower::before, .flower::after {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        width: 42%;
-        height: 20%;
-        border-radius: 0 100% 0 100%;
-        background: #879375;
-      }
-
-      .flower::before { top: 70%; left: -9%; transform: rotate(-25deg); }
-      .flower::after { top: 8%; right: -10%; transform: rotate(-10deg); }
-      .flower--top { top: -6rem; left: -7rem; transform: rotate(-20deg); }
-      .flower--right { top: 5rem; right: -11rem; transform: rotate(30deg) scale(0.8); }
-      .flower--bottom { bottom: -6rem; right: -7rem; transform: rotate(160deg); }
-      .flower--left { bottom: 8rem; left: -12rem; transform: rotate(10deg) scale(0.85); }
+      .flower--top-left { top: 7%; left: -15%; transform: rotate(-18deg) scale(0.9); }
+      .flower--top-right { top: 20%; right: -20%; transform: rotate(14deg) scale(0.92); }
+      .flower--left { top: 47%; left: -20%; transform: rotate(12deg) scale(0.86); }
+      .flower--bottom-left { bottom: -8%; left: 4%; transform: rotate(-12deg) scale(1.15); }
+      .flower--bottom-right { right: -13%; bottom: -5%; transform: rotate(20deg) scale(1.1); }
 
       .invitation {
-        padding: var(--safe-area);
-        background: var(--paper);
-        border: 1px solid var(--line);
-        outline: 1px solid #fffaf280;
-        outline-offset: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: var(--space-3);
+        min-width: 0;
+        padding: clamp(1.25rem, 6cqi, 2.75rem);
+        background: var(--panel);
         text-align: center;
       }
 
-      .invitation > * + * { margin-top: var(--space-8); }
+      .opening {
+        display: grid;
+        justify-items: center;
+        gap: var(--space-2);
+      }
 
       h1 {
-        color: var(--wine);
-        font-family: "Palatino Linotype", Palatino, Georgia, serif;
-        font-size: clamp(1.6rem, 5vw, 2.25rem);
-        font-weight: 400;
-        letter-spacing: 0.18em;
-        line-height: 1.3;
-        padding-left: 0.18em;
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(2rem, 5.4cqi, 2.75rem);
+        font-weight: 700;
+        letter-spacing: 0.07em;
+        line-height: 1.15;
       }
 
-      .ornament {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: var(--space-3);
-        margin: var(--space-6) auto;
-        color: #a88958;
-        font-size: 0.75rem;
+      .intro {
+        max-width: 35rem;
+        font-size: clamp(1rem, 2.35cqi, 1.2rem);
+        line-height: 1.35;
       }
-
-      .ornament::before, .ornament::after {
-        content: "";
-        width: 3rem;
-        height: 1px;
-        background: var(--line);
-      }
-
-      .intro { max-width: 31rem; margin-inline: auto; }
-      .intro strong { font-weight: 600; }
 
       .anniversary {
         display: block;
-        margin-block: var(--space-2);
-        color: var(--wine);
-        font-size: clamp(6rem, 20vw, 9rem);
-        font-weight: 400;
-        line-height: 1.05;
+        font-size: clamp(5rem, 16cqi, 8rem);
+        font-weight: 700;
+        line-height: 0.95;
         letter-spacing: -0.06em;
       }
 
-      .occasion { max-width: 25rem; margin-inline: auto; }
+      .occasion {
+        max-width: 34rem;
+        margin-inline: auto;
+        font-size: clamp(1rem, 2.2cqi, 1.2rem);
+        line-height: 1.35;
+      }
 
       .details {
-        padding-block: var(--space-6);
-        border-block: 1px solid var(--line);
-        text-align: left;
-        font-family: system-ui, sans-serif;
-        font-size: 0.9375rem;
-      }
-
-      .details > div {
         display: grid;
-        grid-template-columns: 5rem minmax(0, 1fr);
-        gap: var(--space-4);
+        gap: var(--space-1);
+        font-size: clamp(1rem, 2.35cqi, 1.2rem);
+        line-height: 1.35;
       }
 
-      .details > div + div { margin-top: var(--space-3); }
-      dt { font-weight: 650; color: var(--wine); }
-
-      .program > * + * { margin-top: var(--space-3); }
-      .note { color: var(--muted); font-size: 0.9375rem; font-style: italic; }
-      .food { font-size: 1rem; }
-
-      .ticket {
-        display: inline-block;
-        padding: var(--space-2) var(--space-6);
-        border: 1px solid var(--line);
-        border-radius: 2px;
-        font-size: 1rem;
+      .program {
+        display: grid;
+        gap: var(--space-1);
+        font-size: clamp(0.95rem, 2.1cqi, 1.1rem);
       }
 
-      .ticket strong { color: var(--wine); white-space: nowrap; }
-      .welcome { color: var(--wine); font-size: 1.25rem; font-style: italic; }
+      .note { font-size: 0.92em; }
+
+      .ticket, .welcome {
+        font-size: clamp(1rem, 2.2cqi, 1.2rem);
+      }
 
       .rsvp {
-        padding-top: var(--space-6);
-        border-top: 1px solid var(--line);
-        font-family: system-ui, sans-serif;
-        font-size: 0.875rem;
+        display: grid;
+        gap: var(--space-1);
+        font-size: clamp(0.95rem, 2cqi, 1.05rem);
       }
 
       .contacts {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: var(--space-4) var(--space-8);
-        margin-top: var(--space-4);
+        display: grid;
+        gap: var(--space-1);
         font-style: normal;
       }
 
-      .contacts a {
-        display: block;
-        width: fit-content;
-        margin-inline: auto;
-        padding-block: var(--space-2);
-        color: var(--wine);
-        font-weight: 600;
-        text-decoration-thickness: 1px;
-        text-underline-offset: 0.2em;
-        white-space: nowrap;
+      a {
+        color: inherit;
+        text-decoration: none;
       }
 
-      a:hover { text-decoration-thickness: 2px; }
-      a:focus-visible { outline: 2px solid var(--wine); outline-offset: 4px; }
+      a:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 3px;
+      }
 
       @media (max-width: 35rem) {
-        body { font-size: 1rem; }
-        .details > div { grid-template-columns: 1fr; gap: var(--space-1); }
-        .invitation > * + * { margin-top: var(--space-6); }
-        .contacts { flex-direction: column; }
+        .poster {
+          min-height: 100svh;
+          aspect-ratio: auto;
+        }
+
+        .invitation { gap: var(--space-2); }
+        .opening { gap: var(--space-1); }
       }
 
       @media print {
-        body { padding: 0; background: white; }
-        .poster { max-width: none; box-shadow: none; }
-        .invitation { padding: var(--space-8); }
-        .contacts a { text-decoration: none; }
+        @page { size: A4 portrait; margin: 0; }
+
+        html, body {
+          width: 210mm;
+          height: 297mm;
+          min-height: 0;
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+
+        .poster {
+          width: 210mm;
+          height: 297mm;
+          min-height: 0;
+          aspect-ratio: auto;
+          margin: 0;
+          padding: 6%;
+        }
       }
     </style>
   </head>
   <body>
-    <main class="poster">
-      <div class="flower flower--top" aria-hidden="true"></div>
-      <div class="flower flower--right" aria-hidden="true"></div>
-      <div class="flower flower--bottom" aria-hidden="true"></div>
-      <div class="flower flower--left" aria-hidden="true"></div>
+    <main class="poster" aria-label="Meghívó">
+      <span class="flower flower--top-left" aria-hidden="true"></span>
+      <span class="flower flower--top-right" aria-hidden="true"></span>
+      <span class="flower flower--left" aria-hidden="true"></span>
+      <span class="flower flower--bottom-left" aria-hidden="true"></span>
+      <span class="flower flower--bottom-right" aria-hidden="true"></span>
 
       <article class="invitation" aria-labelledby="invitation-title">
-        <header>
+        <header class="opening">
           <h1 id="invitation-title">MEGHÍVÓ</h1>
-          <div class="ornament" aria-hidden="true">◆</div>
-          <p class="intro">
-            Szeretettel meghívunk a
-            <strong>Császártöltési Német Nemzetiségi Tánccsoport</strong>
-            fennállása
-          </p>
-          <p>
-            <strong class="anniversary">45.</strong>
-          </p>
-          <p class="occasion">évfordulója alkalmából rendezett jótékonysági bálra</p>
+          <p class="intro"><strong>Szeretettel meghívunk a Császártöltési Német Nemzetiségi Tánccsoport fennállása</strong></p>
+          <p><strong class="anniversary">45.</strong></p>
+          <p class="occasion"><strong>évfordulója alkalmából rendezett jótékonysági bálra</strong></p>
         </header>
 
-        <dl class="details" aria-label="A bál időpontja és helyszíne">
-          <div>
-            <dt>Időpont:</dt>
-            <dd><time datetime="2026-11-21T19:00:00+01:00">2026. november 21. (szombat), 19 óra</time></dd>
-          </div>
-          <div>
-            <dt>Helyszín:</dt>
-            <dd>Császártöltés, Teleház</dd>
-          </div>
-        </dl>
-
-        <section class="program" aria-label="Zene és vendéglátás">
-          <p>Élőzene és tánczene gondoskodnak a jó hangulatról.</p>
-          <p class="note">/Részletek a tánccsoport Facebook oldalán/</p>
-          <p class="food">Büfé • Sült kolbász • Virsli • Tombola</p>
+        <section class="details" aria-label="Időpont és helyszín">
+          <p><strong>Időpont: 2026. november 21. (szombat) 19 óra</strong></p>
+          <p><strong>Helyszín: Császártöltés, Teleház</strong></p>
         </section>
 
-        <p class="ticket">Támogatói jegy: <strong>2000 Ft</strong></p>
-        <p class="welcome">Megjelenésetekre feltétlenül számítunk!</p>
+        <section class="program" aria-label="A bál programja">
+          <p>Élőzene és tánczenék gondoskodnak a jó hangulatról.</p>
+          <p class="note">/Részletek a tánccsoport Facebook oldalán/</p>
+          <p>Büfé • Sült kolbász • Virsli • Tombola</p>
+        </section>
+
+        <p class="ticket"><strong>Támogatói jegy: 2000 Ft</strong></p>
+        <p class="welcome"><strong>Megjelenésetekre feltétlenül számítunk!</strong></p>
 
         <footer class="rsvp">
           <p>Részvételi szándékodat kérjük, az alábbi elérhetőségeken jelezd!</p>
           <address class="contacts">
-            <p>
-              Hómann Antalné Márta:
-              <a href="tel:+36304658066">+36 30 465 8066</a>
-            </p>
-            <p>
-              Hómann Kornél:
-              <a href="tel:+36309677132">+36 30 967 7132</a>
-            </p>
+            <p><strong>Hómann Antalné Márta:</strong> <a href="tel:+36304658066">+36304658066</a></p>
+            <p><strong>Hómann Kornél:</strong> <a href="tel:+36309677132">+36309677132</a></p>
           </address>
         </footer>
       </article>
